@@ -40,6 +40,6 @@ function header_code($atts, $content = null)
 					<hr />
 
 				</div>
-				<div style="clear:left;"></div>
+				<div style="clear:left;"> </div>
 			</div>';
 }
