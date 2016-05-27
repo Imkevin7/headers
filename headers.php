@@ -12,6 +12,16 @@ Copyright: Kevin Pichettte
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 
+// stylesheet
+// function add_my_stylesheet() 
+// {
+//     wp_enqueue_style( 'myCSS', plugins_url( '/css/style.css', __FILE__ ) );
+// }
+
+// add_action('admin_print_styles', 'add_my_stylesheet');
+
+// ------
+
 add_shortcode('header','header_code');
 
 function header_code($atts, $content = null)
@@ -33,7 +43,7 @@ function header_code($atts, $content = null)
 
 				</div>
 				<div style="float: left; width: 30%;">
-					<h1 style="font-size: ' . $size . '; margin: auto;">' . $content . '</h1>
+					<h1 class="header-h1" style="font-size: ' . $size . '; margin: auto;">' . $content . '</h1>
 				</div>
 				<div style="float: left; width: 30%; margin-top: 10px; overflow: hidden;">
 

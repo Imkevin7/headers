@@ -1,0 +1,18 @@
+
+h1.header-h1::before {
+  content: '';
+  border-right: 2px solid black;
+  margin-right: 5px;
+}
+h1.header-h1::after {
+  content: '';
+  border-right: 2px solid black;
+  margin-left: 5px;
+}
+h1.header-h1{color:red;}
+.header-wrap{
+	float: left; 
+	width: 30%; 
+	margin-top: 10px; 
+	overflow:hidden;
+}
